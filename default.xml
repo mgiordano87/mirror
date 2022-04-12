@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="shugaoye"
-           fetch="." />
+   <remote  name="shugaoye"
+            fetch="https://github.com/shugaoye" />
 
   <remote  name="github"
            fetch="https://github.com" />
@@ -13,26 +13,9 @@
 
   <!-- Local repositories at github/shugaoye -->
   <project name="docker-alpine-git" remote="shugaoye" />
-
-  <!-- GitHub repositories -->
-  <project name="github/gitignore"/>
-
-  <!-- shadowsocks repositories -->
-  <project name="shadowsocks/badvpn"/>
-  <project name="shadowsocks/libancillary"/>
-  <project name="shadowsocks/libevent"/>
-  <project name="shadowsocks/redsocks"/>
-  <project name="shadowsocks/shadowsocks-android"/>
-  <project name="shadowsocks/shadowsocks-rust"/>
-  <project name="Jigsaw-Code/outline-client"/>
-
-  <!-- edslite repositories -->
-  <project name="sovworks/edslite"/>
   
   <!-- EncFSMP -->
   <project name="rhiestan/EncFSMP"/>
-  
-  <!-- Termux -->
-  <project name="termux/termux-app"/>
+
   
 </manifest>
