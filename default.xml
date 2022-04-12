@@ -1,0 +1,16 @@
+<manifest>
+<remote fetch="https://github.com/stevenleeyongwah" name="steven"/>
+<remote fetch="https://github.com/mgiordano87" name="mgior"/>
+<remote fetch="https://github.com/shugaoye" name="shg"/>
+
+<default remote="origin" sync-j="4" revision="master"/>
+<!-- configuracion proyectos mgiordano87-->
+<project name="linux_app" path="app" remote="mgior"/>
+<project name="linux_driver" path="driver" remote="mgior"/>
+<!-- configuracion proyectos steven-->
+<project name="linux_app" path="stapp" remote="steven"/>
+<project name="linux_driver" path="stdriver" remote="steven"/>
+<!-- configuracion proyectos shugaoye-->
+<project name="PassXYZ.Vault2" path="pass" remote="shg"/>
+
+</manifest> 
