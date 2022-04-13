@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-
-    <remote  name="shugaoye"
-            fetch="https://github.com/shugaoye" />
-
+<manifest>   
+<!--
     <remote name="github"
             fetch=".." />
+ -->
+     <remote  name="shugaoye"
+            fetch="https://github.com/shugaoye" />
+
+    <remote fetch="https://github.com/mgiordano87" name="gior"/>
 
     <default revision="master"
            remote="github"
@@ -19,14 +21,14 @@
     <project name="docker-alpine-git" remote="shugaoye" />
     <!-- repositorio GitHub mgiordano87 -->
    
-    <project name="linux_app" path="app"/>
-    <project name="linux_driver" path="driver"/>
-    <!-- configuracion de repositorios github -->
+    <project name="linux_app" path="app" remote="gior"/>
+    <project name="linux_driver" path="driver" remote="gior"/>
+<!-- configuracion de repositorios github 
     <project name="manifest"/>    
     <project name="mirror"/>
     <project name="local_manifests"/>
     <project name="manifests"/>
-
-    <remote fetch="https://github.com/mgiordano87" name="origin"/>
+-->
+    
 
 </manifest>
