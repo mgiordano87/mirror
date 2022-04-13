@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-   <remote  name="shugaoye"
+    <remote  name="shugaoye"
             fetch="https://github.com/shugaoye" />
 
-  <remote  name="github"
-           fetch="https://github.com" />
+    <remote name="github"
+            fetch=".." />
 
-  <default revision="master"
+    <default revision="master"
            remote="github"
            sync-j="4" />
+    <!--
+        default para repositorios de mgiordano87
+        <default remote="origin" sync-j="4" revision="master"/> 
+    -->
 
-  <!-- Local repositories at github/shugaoye -->
-  <project name="docker-alpine-git" remote="shugaoye" />
-  
-  <!-- EncFSMP -->
-  <project name="rhiestan/EncFSMP"/>
+    <!--repositorio Github de Shugaoye -->
+    <project name="docker-alpine-git" remote="shugaoye" />
+    <!-- repositorio GitHub mgiordano87 -->
+   
+    <project name="linux_app" path="app"/>
+    <project name="linux_driver" path="driver"/>
+    <!-- configuracion de repositorios github -->
+    <project name="manifest"/>    
+    <project name="mirror"/>
+    <project name="local_manifests"/>
+    <project name="manifests"/>
 
-  
+    <remote fetch="https://github.com/mgiordano87" name="origin"/>
+
 </manifest>
